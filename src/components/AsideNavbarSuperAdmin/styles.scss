@@ -1,0 +1,176 @@
+@use 'src/styles/vars';
+
+@media (max-width: 1500px) {
+  .AsideNavbarSuperAdmin {
+    display : none;
+  }
+}
+
+
+@media (min-width: 1501px) {
+
+  
+  
+  .AsideNavbarSuperAdmin {
+    width: 15vw;
+    height: 100%;
+    padding-top: 20px;
+    background-color: vars.$blueColor;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    .AsideNavbarSuperAdmin-ProfileCard-main {
+
+      display: flex;
+      flex-direction: column;
+      border: solid 1px vars.$lightColor;
+      margin: 0px 30px;
+      padding: 15px; 
+      border-radius: 25px;
+
+      .AsideNavbarSuperAdmin-ProfileCard-MainPicture{
+        width: 80px;
+        height: auto;
+        margin: 0px auto 20px auto;
+        border: solide 3px vars.$turquoiseColor
+      }
+
+      .AsideNavbarSuperAdmin-ProfileCard-Name{
+        color: vars.$lightColor;
+        font-weight: 900;
+        text-align: center;
+        font-size: x-large;
+        
+      }
+
+      .AsideNavbarSuperAdmin-ProfileCard-Title{
+        color: vars.$lightColor;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .AsideNavbarSuperAdmin-ProfileCard-ProfilePictureContainer {
+        
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around ;
+          margin: 30px 0px 20px;
+
+        @media (max-width: 1800px) {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around ;
+          margin: 20px 0px 20px;
+        }
+
+        .AsideNavbarSuperAdmin-ProfileCard-ProfilePicture{
+          width: 40px;
+          height: auto;
+          margin: 5px;
+        }
+
+        .AsideNavbarSuperAdmin-ProfileCard-AddPicture {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          color: vars.$lightColor;
+          border: solid 1px vars.$lightColor;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 5px;
+        }
+      }
+      
+
+      .AsideNavbarSuperAdmin-ProfileCard-Link{
+        color: vars.$lightColor;
+        text-align: center;
+        margin-top: 10px;
+        color: vars.$lightColor;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        @media (max-width: 1550px) {
+          font-size: small;
+        }
+      }
+    }
+
+    .AsideNavbar-Navbar-container {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: auto;
+      height: 45vh;
+
+      .AsideNavbar-Navbar-main {
+        margin-top: 2em;
+
+        .AsideNavbar-Navbar-ul {
+          
+          .AsideNavbar-Navbar-item {
+  
+            .material-icons {
+              font-family: 'Material Icons';
+              font-weight: normal;
+              font-style: normal;
+              font-size: 24px;  /* Preferred icon size */
+              display: inline-block;
+              line-height: 1;
+              text-transform: none;
+              letter-spacing: normal;
+              word-wrap: normal;
+              white-space: nowrap;
+              direction: ltr;
+  
+            }
+  
+            .AsideNavbar-Navbar-category {
+              align-self: center;
+              margin-left: 10px;
+            }
+
+          }
+  
+        }
+  
+      }
+
+    }
+
+  }
+
+  .AsideNavbarSuperAdmin-logout {
+    margin: 0px auto;
+
+    button {
+      padding: 10px;
+      color: vars.$lightColor;
+      background-color: vars.$blueColor;
+      font-size: 1em;
+      font-weight:400;
+      border: (solid vars.$lightColor 1px);
+      border-radius: 10px;
+      box-shadow: darkslategray;
+      margin: 0px auto 30px auto;
+      width: 165px;
+      align-self: center;
+      
+
+      &:hover {
+        background-color: vars.$lightColor;
+        color: vars.$blueColor;
+      
+      } 
+    }
+  }
+}
